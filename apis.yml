@@ -79,9 +79,9 @@ common:
   - type: JSONSchema
     url: json-schema/cities-database-api-city-schema.json
   - type: Spectral
-    url: spectral/cities-database-api-spectral.yml
+    url: rules/cities-database-api-rules.yml
   - type: Naftiko Capabilities
-    url: naftiko/cities-database-api-capabilities.yml
+    url: capabilities/cities-database-api-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

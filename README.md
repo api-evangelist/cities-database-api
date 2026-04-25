@@ -53,8 +53,8 @@ The AirLabs Cities API exposes a single `GET /cities` endpoint that returns a li
 - [Status](https://airlabs.co/status)
 - [JSON-LD Context](json-ld/cities-database-api-context.jsonld)
 - [JSON Schema](json-schema/cities-database-api-city-schema.json)
-- [Spectral Ruleset](spectral/cities-database-api-spectral.yml)
-- [Naftiko Capabilities](naftiko/cities-database-api-capabilities.yml)
+- [Spectral Ruleset](rules/cities-database-api-rules.yml)
+- [Naftiko Capabilities](capabilities/cities-database-api-capabilities.yml)
 
 ## Maintainers
 
