@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://airlabs.co/vocab/",
+    "schema": "https://schema.org/",
+    "airlabs": "https://airlabs.co/vocab/",
+    "City": "schema:City",
+    "Country": "schema:Country",
+    "name": "schema:name",
+    "cityCode": "airlabs:city_code",
+    "unCode": "airlabs:un_code",
+    "countryCode": "airlabs:country_code",
+    "lat": "schema:latitude",
+    "lng": "schema:longitude",
+    "elevation": "schema:elevation",
+    "timezone": "airlabs:timezone",
+    "population": "airlabs:population",
+    "wikipedia": "schema:sameAs",
+    "slug": "airlabs:slug"
+  }
+}

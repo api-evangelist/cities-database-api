@@ -1,0 +1,29 @@
+capabilities:
+  - id: cities-database-api.list-cities
+    name: List cities globally
+    description: >-
+      Retrieve a list of cities worldwide with English names, IATA
+      metropolitan codes, ISO country codes, and coordinates.
+    apis:
+      - cities-database-api:airlabs-cities-api
+  - id: cities-database-api.lookup-city
+    name: Look up a city by IATA code
+    description: >-
+      Filter the cities dataset by city_code (IATA metropolitan area)
+      to resolve a code to canonical city metadata.
+    apis:
+      - cities-database-api:airlabs-cities-api
+  - id: cities-database-api.list-cities-by-country
+    name: List cities by country
+    description: >-
+      Filter the cities dataset by ISO 2 country_code to enumerate
+      cities within a country.
+    apis:
+      - cities-database-api:airlabs-cities-api
+  - id: cities-database-api.geocode-city
+    name: Geocode a city to coordinates
+    description: >-
+      Resolve a city to latitude and longitude for mapping, clustering,
+      and proximity searches alongside airport datasets.
+    apis:
+      - cities-database-api:airlabs-cities-api

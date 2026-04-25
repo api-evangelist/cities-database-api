@@ -1,0 +1,38 @@
+extends:
+  - spectral:oas
+rules:
+  cities-server-https:
+    description: Cities Database API server URL MUST use HTTPS.
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://'
+  cities-base-url:
+    description: Cities Database API server SHOULD be airlabs.co/api/v9.
+    severity: warn
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://airlabs\.co/api/v9'
+  cities-operation-id:
+    description: Operations MUST have an operationId.
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: operationId
+      function: truthy
+  cities-tag-required:
+    description: Operations MUST be tagged.
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch].tags
+    then:
+      function: truthy
+  cities-api-key-required:
+    description: Cities Database API operations MUST require an api_key parameter.
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch].parameters[?(@.name=='api_key')]
+    then:
+      function: truthy

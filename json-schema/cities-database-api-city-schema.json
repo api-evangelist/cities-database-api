@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cities-database-api/main/json-schema/cities-database-api-city-schema.json",
+  "title": "AirLabs City",
+  "description": "Single city record returned by the AirLabs Cities Database API.",
+  "type": "object",
+  "required": ["name", "city_code", "country_code", "lat", "lng"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "English name of the city."
+    },
+    "city_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "IATA metropolitan area code."
+    },
+    "un_code": {
+      "type": "string",
+      "description": "UN/LOCODE for the city."
+    },
+    "slug": {
+      "type": "string",
+      "description": "SEO-friendly slug."
+    },
+    "country_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code."
+    },
+    "lat": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90,
+      "description": "Latitude in decimal degrees."
+    },
+    "lng": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180,
+      "description": "Longitude in decimal degrees."
+    },
+    "elevation": {
+      "type": "integer",
+      "description": "Elevation in meters."
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone identifier."
+    },
+    "population": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Population count."
+    },
+    "wikipedia": {
+      "type": "string",
+      "format": "uri",
+      "description": "Wikipedia article URL."
+    },
+    "names": {
+      "type": "object",
+      "additionalProperties": {"type": "string"},
+      "description": "Multilingual city names keyed by ISO 639-1 language code."
+    }
+  }
+}
