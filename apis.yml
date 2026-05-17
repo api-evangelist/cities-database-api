@@ -38,7 +38,7 @@ apis:
       - url: https://airlabs.co/docs/cities
         type: Documentation
       - url: https://airlabs.co/docs
-        type: API Reference
+        type: APIReference
       - url: https://airlabs.co/account/api-key
         type: Authentication
       - url: openapi/cities-database-api-openapi.yml
@@ -58,7 +58,7 @@ common:
     url: https://airlabs.co/docs
   - type: Pricing
     url: https://airlabs.co/pricing
-  - type: Sign Up
+  - type: SignUp
     url: https://airlabs.co/signup
   - type: Login
     url: https://airlabs.co/login
@@ -66,15 +66,15 @@ common:
     url: https://airlabs.co/account
   - type: Authentication
     url: https://airlabs.co/account/api-key
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://airlabs.co/privacy
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://airlabs.co/terms
   - type: Support
     url: https://airlabs.co/contact
-  - type: Status
+  - type: StatusPage
     url: https://airlabs.co/status
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/cities-database-api-context.jsonld
   - type: JSONSchema
     url: json-schema/cities-database-api-city-schema.json
