@@ -1,0 +1,63 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AirLabs Cities Database API",
+    "version": "9"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Cities",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List cities",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://airlabs.co/api/v9/cities",
+            "params": [
+              {
+                "name": "api_key",
+                "value": "",
+                "type": "query",
+                "description": "AirLabs API key from the account dashboard."
+              },
+              {
+                "name": "city_code",
+                "value": "",
+                "type": "query",
+                "description": "IATA metropolitan city code (e.g. NYC, LON, PAR)."
+              },
+              {
+                "name": "country_code",
+                "value": "",
+                "type": "query",
+                "description": "ISO 2 country code (e.g. US, GB, FR)."
+              },
+              {
+                "name": "_fields",
+                "value": "",
+                "type": "query",
+                "description": "Comma-separated list of fields to include in the response."
+              }
+            ]
+          },
+          "docs": "Returns a list of cities, optionally filtered by IATA metropolitan city_code, ISO 2 country_code, or restricted to a specified set of fields."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
