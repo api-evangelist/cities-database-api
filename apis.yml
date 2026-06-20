@@ -28,7 +28,7 @@ apis:
       - IATA
       - Reference Data
       - Travel
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://airlabs.co/api/v9
     humanURL: https://airlabs.co/docs/cities
     properties:
