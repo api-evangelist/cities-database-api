@@ -52,7 +52,7 @@ common:
     url: https://airlabs.co/docs
   - type: Pricing
     url: https://airlabs.co/pricing
-  - type: SignUp
+  - type: Signup
     url: https://airlabs.co/signup
   - type: Login
     url: https://airlabs.co/login
