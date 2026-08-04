@@ -1,0 +1,14 @@
+{
+  "provider": "cities-database-api",
+  "sources": [
+    "cities-database-api-cities-api-openapi.yml"
+  ],
+  "outputs": [
+    "cities-database-api-cities-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

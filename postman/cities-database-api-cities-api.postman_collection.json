@@ -1,0 +1,259 @@
+{
+  "info": {
+    "_postman_id": "765e3dd2-89b7-4e33-90f5-1349fa103176",
+    "name": "AirLabs Database Cities API",
+    "description": "The AirLabs Cities Database API returns a list of global cities filterable by IATA city_code, ISO 2 country_code, or selected fields. City data complements and extends the AirLabs airports dataset for travel search, mapping, and geocoding experiences.\n\nContact Support:\n Name: AirLabs Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T01:21:13.000Z",
+    "updatedAt": "2026-07-28T01:21:13.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-765e3dd2-89b7-4e33-90f5-1349fa103176"
+  },
+  "item": [
+    {
+      "name": "cities",
+      "item": [
+        {
+          "name": "List cities",
+          "id": "5d75b266-1fdb-4d54-8ecb-0d4c47b42e85",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/cities?api_key=<string>&city_code=<string>&country_code=<string>&_fields=<string>",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "cities"
+              ],
+              "query": [
+                {
+                  "description": "(Required) AirLabs API key from the account dashboard.",
+                  "key": "api_key",
+                  "value": "<string>"
+                },
+                {
+                  "description": "IATA metropolitan city code (e.g. NYC, LON, PAR).",
+                  "key": "city_code",
+                  "value": "<string>"
+                },
+                {
+                  "description": "ISO 2 country code (e.g. US, GB, FR).",
+                  "key": "country_code",
+                  "value": "<string>"
+                },
+                {
+                  "description": "Comma-separated list of fields to include in the response.",
+                  "key": "_fields",
+                  "value": "<string>"
+                }
+              ]
+            },
+            "description": "Returns a list of cities, optionally filtered by IATA metropolitan city_code, ISO 2 country_code, or restricted to a specified set of fields."
+          },
+          "response": [
+            {
+              "id": "0a13b524-b779-468e-b8c0-49b559fd5617",
+              "name": "An array of city objects.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/cities?api_key=<API Key>&city_code=<string>&country_code=<string>&_fields=<string>",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "cities"
+                  ],
+                  "query": [
+                    {
+                      "description": "(Required) AirLabs API key from the account dashboard.",
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    },
+                    {
+                      "description": "IATA metropolitan city code (e.g. NYC, LON, PAR).",
+                      "key": "city_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "ISO 2 country code (e.g. US, GB, FR).",
+                      "key": "country_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Comma-separated list of fields to include in the response.",
+                      "key": "_fields",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"request\": {\n    \"lang\": \"<string>\",\n    \"currency\": \"<string>\",\n    \"time\": \"<integer>\",\n    \"id\": \"<string>\",\n    \"server\": \"<string>\"\n  },\n  \"response\": [\n    {\n      \"name\": \"<string>\",\n      \"city_code\": \"<string>\",\n      \"un_code\": \"<string>\",\n      \"slug\": \"<string>\",\n      \"country_code\": \"<string>\",\n      \"lat\": \"<float>\",\n      \"lng\": \"<float>\",\n      \"elevation\": \"<integer>\",\n      \"timezone\": \"<string>\",\n      \"population\": \"<integer>\",\n      \"wikipedia\": \"<uri>\",\n      \"names\": {\n        \"commodo_eb8\": \"<string>\"\n      }\n    },\n    {\n      \"name\": \"<string>\",\n      \"city_code\": \"<string>\",\n      \"un_code\": \"<string>\",\n      \"slug\": \"<string>\",\n      \"country_code\": \"<string>\",\n      \"lat\": \"<float>\",\n      \"lng\": \"<float>\",\n      \"elevation\": \"<integer>\",\n      \"timezone\": \"<string>\",\n      \"population\": \"<integer>\",\n      \"wikipedia\": \"<uri>\",\n      \"names\": {\n        \"in10\": \"<string>\",\n        \"ut_b_\": \"<string>\"\n      }\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T01:21:14.000Z",
+              "updatedAt": "2026-07-28T01:21:14.000Z",
+              "uid": "35240-0a13b524-b779-468e-b8c0-49b559fd5617"
+            },
+            {
+              "id": "bcbd478b-1d14-40b7-be72-5fe149093dc0",
+              "name": "Invalid or missing API key.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/cities?api_key=<API Key>&city_code=<string>&country_code=<string>&_fields=<string>",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "cities"
+                  ],
+                  "query": [
+                    {
+                      "description": "(Required) AirLabs API key from the account dashboard.",
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    },
+                    {
+                      "description": "IATA metropolitan city code (e.g. NYC, LON, PAR).",
+                      "key": "city_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "ISO 2 country code (e.g. US, GB, FR).",
+                      "key": "country_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Comma-separated list of fields to include in the response.",
+                      "key": "_fields",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:21:14.000Z",
+              "updatedAt": "2026-07-28T01:21:14.000Z",
+              "uid": "35240-bcbd478b-1d14-40b7-be72-5fe149093dc0"
+            },
+            {
+              "id": "376ce788-1759-4d53-b9de-e2f8e5b83bae",
+              "name": "Rate limit exceeded.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/cities?api_key=<API Key>&city_code=<string>&country_code=<string>&_fields=<string>",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "cities"
+                  ],
+                  "query": [
+                    {
+                      "description": "(Required) AirLabs API key from the account dashboard.",
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    },
+                    {
+                      "description": "IATA metropolitan city code (e.g. NYC, LON, PAR).",
+                      "key": "city_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "ISO 2 country code (e.g. US, GB, FR).",
+                      "key": "country_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Comma-separated list of fields to include in the response.",
+                      "key": "_fields",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T01:21:14.000Z",
+              "updatedAt": "2026-07-28T01:21:14.000Z",
+              "uid": "35240-376ce788-1759-4d53-b9de-e2f8e5b83bae"
+            }
+          ],
+          "createdAt": "2026-07-28T01:21:14.000Z",
+          "updatedAt": "2026-07-28T01:21:14.000Z",
+          "uid": "35240-5d75b266-1fdb-4d54-8ecb-0d4c47b42e85"
+        }
+      ],
+      "id": "fcdc51a7-d5f1-4f8d-9ca6-6efa5d9fab84",
+      "createdAt": "2026-07-28T01:21:14.000Z",
+      "updatedAt": "2026-07-28T01:21:14.000Z",
+      "uid": "35240-fcdc51a7-d5f1-4f8d-9ca6-6efa5d9fab84"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "api_key",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "query",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://airlabs.co/api/v9"
+    }
+  ]
+}
