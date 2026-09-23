@@ -1,7 +1,7 @@
 {
   "provider": "cities-database-api",
   "sources": [
-    "cities-database-api-cities-api-openapi.yml"
+    "_original/cities-database-api-openapi.yml"
   ],
   "outputs": [
     "cities-database-api-cities-api-openapi.yml"
@@ -9,6 +9,13 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "cities-database-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "cities-database-api-openapi.yml: declared missing tag: Cities",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "cities-database-api-cities-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
