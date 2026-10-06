@@ -29,7 +29,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cities-dat
 name: Cities Database API
 url: https://raw.githubusercontent.com/api-evangelist/cities-database-api/refs/heads/main/apis.yml
 created: '2024-03-30'
-modified: '2026-05-19'
+modified: '2026-10-06'
 type: Index
 access: 3rd-Party
 position: Consuming
@@ -71,6 +71,8 @@ apis:
   - type: Authentication
     url: https://airlabs.co/account/api-key
 common:
+  - url: https://airlabs.co/blog/
+    type: Blog
   - type: PostmanWorkspace
     url: https://www.postman.com/kinlaneapi/cities-database-api/overview
   - type: AgenticAccess
