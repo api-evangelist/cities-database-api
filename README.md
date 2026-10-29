@@ -1,4 +1,4 @@
-# Cities Database API (cities-database-api)
+# Cities Database API
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,72 +66,140 @@
 
 The Cities Database API by AirLabs provides a global reference dataset of cities keyed to IATA metropolitan area codes, ISO country codes, and geographic coordinates. The API is consumed alongside the AirLabs Airports, Airlines, and Flights APIs to power travel search, mapping, geocoding, and clustering experiences. Authentication uses an api_key query parameter obtained from the AirLabs account dashboard. All responses are JSON arrays of city objects.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cities-database-api/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cities-database-api/refs/heads/main/apis.yml)
+**Areas:** Cities · Data · Geography · Location · Reference Data · Travel
 
-## Scope
+## Cities Database API on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Cities Database API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cities-database-api/](https://apis.io/providers/cities-database-api/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Cities
-- Data
-- Geography
-- Locations
-- Reference Data
-- Travel
+- [Cities Database API Cities API](https://apis.io/apis/cities-database-api/cities-database-api-cities-api/) — The Cities API from Cities Database API — 1 operation(s) for cities.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-03-30
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### AirLabs Cities API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The AirLabs Cities API exposes a single GET /cities endpoint that returns a list of cities filterable by IATA city_code, ISO 2 country_code, or comma-separated _fields. Free-tier responses include name, city_code, latitude, longitude, and country_code; paid tiers add UN/LOCODE, elevation, timezone, population, multilingual names, Wikipedia links, and SEO slugs. Authentication uses the api_key query parameter.
+- [Cities Database Api Agentic Access](https://apis.io/agentic-access/cities-database-api/cities-database-api-agentic-access/)
 
-- **Human URL:** [https://airlabs.co/docs/cities](https://airlabs.co/docs/cities)
-- **Base URL:** `https://airlabs.co/api/v9`
+#### JSON Schema (1)
 
-#### Tags
+The data models the API reads and writes.
 
-- Cities
-- Geography
-- IATA
-- Reference Data
-- Travel
+- [AirLabs City](https://apis.io/schemas/cities-database-api/cities-database-api-city/)
 
-#### Properties
+#### JSON-LD (1)
 
-- [Documentation](https://airlabs.co/docs/cities)
-- [API Reference](https://airlabs.co/docs)
-- [Authentication](https://airlabs.co/account/api-key)
-- [OpenAPI](openapi/cities-database-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cities-database-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cities-database-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Linked-data contexts for the provider's vocabulary.
 
-## Common Properties
+- [Cities Database Api Context](https://apis.io/jsonld/cities-database-api/cities-database-api-context/)
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [AirLabs Cities Database API](https://apis.io/collections/cities-database-api/open-cities-database-api/)
+- [AirLabs Database Cities API](https://apis.io/collections/cities-database-api/open-cities-database-api-cities-api/)
+- [AirLabs Database Cities API](https://apis.io/collections/cities-database-api/postman-cities-database-api-cities-api/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Cities Database API — jsonschema rules](https://apis.io/rules/cities-database-api/cities-database-api-jsonschema-spectral-rules/)
+- [Cities Database API API Rules](https://apis.io/rules/cities-database-api/cities-database-api-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cities Database Api Authentication](https://apis.io/security/cities-database-api/cities-database-api-authentication/)
+- [Cities Database Api Domain Security](https://apis.io/security/cities-database-api/cities-database-api-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cities Database Api Plans Pricing](https://apis.io/plans/cities-database-api/cities-database-api-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cities Database Api Rate Limits](https://apis.io/rate-limits/cities-database-api/cities-database-api-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Cities Database Api Finops](https://apis.io/finops/cities-database-api/cities-database-api-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://airlabs.co/)
 - [Documentation](https://airlabs.co/docs)
 - [Pricing](https://airlabs.co/pricing)
-- [Sign Up](https://airlabs.co/signup)
-- [Login](https://airlabs.co/login)
-- [Account](https://airlabs.co/account)
-- [Authentication](https://airlabs.co/account/api-key)
-- [Privacy Policy](https://airlabs.co/privacy)
-- [Terms of Service](https://airlabs.co/terms)
 - [Support](https://airlabs.co/contact)
-- [Status Page](https://airlabs.co/status)
-- [JSON-LD](json-ld/cities-database-api-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON Schema](json-schema/cities-database-api-city-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [Spectral Rules](rules/cities-database-api-rules.yml) — [Spectral](https://docs.stoplight.io/docs/spectral)
+- [Blog](https://airlabs.co/blog/)
+- [Terms of service](https://airlabs.co/terms)
+- [Privacy policy](https://airlabs.co/privacy)
+- [Status](https://airlabs.co/status)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 55.0 |
+| Contract governance | 13.6 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 20.2 |
+| Access clarity | 14.5 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cities-database-api/](https://apis.io/providers/cities-database-api/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cities Database API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cities-database-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
